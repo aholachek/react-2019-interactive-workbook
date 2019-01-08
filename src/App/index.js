@@ -19,6 +19,7 @@ import PortalDescription from "../Portal/Description"
 import TaskIndicator from "./SidebarTaskIndicator"
 import TaskHOC from "./TaskHOC"
 import "./index.scss"
+import "bulma/css/bulma.css"
 
 const routeConfig = [
   {
