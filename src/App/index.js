@@ -83,7 +83,7 @@ const history = createBrowserHistory()
 const unlisten = history.listen((location, action) => {
   const { module } = routeConfig.find(c => c.route === location.pathname) || {}
   if (module) {
-    window.location = `${window.location.pathname}?module="${module}"`
+    window.parent.location = `${window.parent.location.pathname}?module="${module}"`
   }
 
   window.scrollTo(0, 0)
