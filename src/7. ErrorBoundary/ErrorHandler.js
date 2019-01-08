@@ -13,7 +13,7 @@ class ErrorHandler extends Component {
 
   render() {
     const { children, message } = this.props
-    return null
+    return children
   }
 }
 

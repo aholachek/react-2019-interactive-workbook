@@ -13,7 +13,7 @@ const Description = ({ toggleFinishedTask }) => {
         </span>
         <span>
           Click the button below. The page will then render{" "}
-          <code>DangerousComponent</code>, which will through an uncaught error
+          <code>DangerousComponent</code>, which will throw an uncaught error
           and crash the page.
         </span>
         <span>

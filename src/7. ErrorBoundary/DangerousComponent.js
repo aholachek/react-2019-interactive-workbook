@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 class DangerousComponent extends Component {
   componentDidMount() {
-    throw new Error("Dangerous component imploded")
+    throw new Error("💥 Dangerous component threw an error! 💥")
   }
 
   render() {
