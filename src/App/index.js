@@ -2,10 +2,10 @@
 import React, { useState } from "react"
 import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom"
 import About from "./About"
-import TimerExample from "../Hooks/TimeSinceMounted"
-import TimerDescription from "../Hooks/TimeSinceMounted/Description"
-import FormExample from "../Hooks/Form"
-import FormDescription from "../Hooks/Form/Description"
+import TimerExample from "../Hooks/UseEffect"
+import TimerDescription from "../Hooks/UseEffect/Description"
+import FormExample from "../Hooks/CustomHook"
+import FormDescription from "../Hooks/CustomHook/Description"
 import ErrorBoundaryExample from "../ErrorBoundary"
 import ErrorBoundaryDescription from "../ErrorBoundary/Description"
 import ContextExample from "../Context"
@@ -29,7 +29,7 @@ const routeConfig = [
     description: TimerDescription
   },
   {
-    route: "/hooks/form",
+    route: "/hooks/CustomHook",
     title: "Custom Hook",
     component: FormExample,
     description: FormDescription
