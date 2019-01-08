@@ -17,11 +17,11 @@ const Description = ({ toggleFinishedTask }) => {
           function on every <code>GridSquare</code> function.
         </span>
         <span>
-          Take a look at GridSquare and figure out the hack I've used to make
+          Take a look at <a href={window.location}></a>GridSquare and figure out the hack I've used to make
           re-rendering expensive.
         </span>
         <span>
-          Finally, use <code>React.memo</code> to improve rendering speed.
+          Finally, figure out how to use <code>React.memo</code> to speed up the movement of the pink square.
         </span>
       </TaskChecklist>
     </div>

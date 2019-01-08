@@ -18,8 +18,8 @@ import PortalExample from "../Portal"
 import PortalDescription from "../Portal/Description"
 import TaskIndicator from "./SidebarTaskIndicator"
 import TaskHOC from "./TaskHOC"
-import "./index.scss"
 import "bulma/css/bulma.css"
+import "./index.scss"
 
 const routeConfig = [
   {
@@ -80,13 +80,16 @@ function App() {
     })
   }
   return (
-    <div>
-      <Router>
-        <div className="app-container">
+    <Router>
+      <div className="app-container">
+        <nav>
+          <Link className="nav-title" to="/">
+            React 2019 Interactive Workbook
+          </Link>
+        </nav>
+        <div className="flex-container">
           <ul className="sidebar">
-            <Link className="sidebar-title" to="/">
-              React 2019 Interactive Workbook
-            </Link>
+            <h2 className="subtitle is-5 mb-1">Tasks</h2>
             {routeConfig.map(({ route, title }, i) => (
               <li>
                 <NavLink
@@ -119,8 +122,8 @@ function App() {
             ))}
           </main>
         </div>
-      </Router>
-    </div>
+      </div>
+    </Router>
   )
 }
 

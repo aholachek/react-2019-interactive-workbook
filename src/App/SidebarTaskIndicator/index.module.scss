@@ -11,9 +11,9 @@
   height: 1.5rem;
   border-radius: 100px;
   background-color: #ecebeb;
-  margin-right: 1rem;
+  margin-right: .5rem;
   &.checked {
-    background-color: $green;
+    background-color: $red;
   }
 }
 
