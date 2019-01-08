@@ -7,7 +7,7 @@ const Description = ({ toggleFinishedTask }) => {
       <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
         <span>
           First,{" "}
-          <a href="https://reactjs.org/docs/context.html">
+          <a href="https://reactjs.org/docs/context.html" target="_blank">
             read the docs for React.context.
           </a>
         </span>

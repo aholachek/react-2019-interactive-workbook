@@ -7,7 +7,7 @@ const Description = ({ toggleFinishedTask }) => {
       <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
         <span>
           First,{" "}
-          <a href="https://reactjs.org/docs/error-boundaries.html">
+          <a href="https://reactjs.org/docs/error-boundaries.html" target="_blank">
             read the docs for React.lazy.
           </a>
         </span>
