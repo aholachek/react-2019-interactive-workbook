@@ -23,9 +23,9 @@ const About = () => {
       </p>
       <p>
         To get started,{" "}
-        <Link to="/hooks/timer">just click on a task in the menu</Link> and
-        follow the instructions! Each task should take between 5 and 25 minutes
-        to complete.
+        <Link to="/context">just click on a task in the menu</Link> and follow
+        the instructions! Each task should take between 5 and 25 minutes to
+        complete.
       </p>
       <p>
         If you get confused, search for the <code>TODO</code> comments in the

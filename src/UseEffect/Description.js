@@ -1,5 +1,5 @@
 import React from "react"
-import TaskChecklist from "../../App/TaskChecklist"
+import TaskChecklist from "../App/TaskChecklist"
 
 const Description = ({ toggleFinishedTask }) => {
   return (
@@ -12,18 +12,17 @@ const Description = ({ toggleFinishedTask }) => {
           </a>
         </span>
         <span>
-          Write a functional React component,{" "}
-          <code>Timer</code>, that records and displays the seconds since it has
-          been mounted.
+          Write a functional React component, <code>Timer</code>, that records
+          and displays the seconds since it has been mounted.
         </span>
         <span>
-          The <code>Timer</code> component should be
-          able to receive a <code>type</code> prop that can switch between{" "}
+          The <code>Timer</code> component should be able to receive a{" "}
+          <code>type</code> prop that can switch between{" "}
           <code>milliseconds</code> and <code>seconds.</code>
         </span>
         <span>
-          Clean up any timers or listeners that you add to
-          the component when the component is unmounted.
+          Clean up any timers or listeners that you add to the component when
+          the component is unmounted.
         </span>
       </TaskChecklist>
     </div>

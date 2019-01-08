@@ -1,11 +1,12 @@
 /* eslint import/no-webpack-loader-syntax: 0 */
-import React, { useState } from "react"
-import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom"
+import React, { useState, useEffect } from "react"
+import { Router, Route, Link, NavLink } from "react-router-dom"
+import createBrowserHistory from "history/createBrowserHistory"
 import About from "./About"
-import TimerExample from "../Hooks/UseEffect"
-import TimerDescription from "../Hooks/UseEffect/Description"
-import FormExample from "../Hooks/CustomHook"
-import FormDescription from "../Hooks/CustomHook/Description"
+import TimerExample from "../UseEffect"
+import TimerDescription from "../UseEffect/Description"
+import FormExample from "../CustomHook"
+import FormDescription from "../CustomHook/Description"
 import ErrorBoundaryExample from "../ErrorBoundary"
 import ErrorBoundaryDescription from "../ErrorBoundary/Description"
 import ContextExample from "../Context"
@@ -23,46 +24,53 @@ import "./index.scss"
 
 const routeConfig = [
   {
-    route: "/hooks/timer",
-    title: "UseEffect Hook",
-    component: TimerExample,
-    description: TimerDescription
-  },
-  {
-    route: "/hooks/CustomHook",
-    title: "Custom Hook",
-    component: FormExample,
-    description: FormDescription
-  },
-  {
-    route: "/error-boundary",
-    title: "Error Boundary",
-    component: ErrorBoundaryExample,
-    description: ErrorBoundaryDescription
-  },
-  {
     route: "/context",
     title: "Context",
     component: ContextExample,
-    description: ContextDescription
+    description: ContextDescription,
+    module: "src/Context/index.js"
   },
   {
     route: "/memo",
     title: "React.memo",
     component: MemoExample,
-    description: MemoDescription
+    description: MemoDescription,
+    module: "src/Memo/index.js"
   },
   {
     route: "/lazy",
     title: "React.lazy",
     component: LazyExample,
-    description: LazyDescription
+    description: LazyDescription,
+    module: "src/Lazy/index.js"
   },
   {
     route: "/portal",
     title: "Portal",
     component: PortalExample,
-    description: PortalDescription
+    description: PortalDescription,
+    module: "src/Portal/index.js"
+  },
+  {
+    route: "/CustomHook",
+    title: "Custom Hook",
+    component: FormExample,
+    description: FormDescription,
+    module: "src/CustomHook/index.js"
+  },
+  {
+    route: "/timer",
+    title: "UseEffect Hook",
+    component: TimerExample,
+    description: TimerDescription,
+    module: "src/UseEffect/index.js"
+  },
+  {
+    route: "/error-boundary",
+    title: "Error Boundary",
+    component: ErrorBoundaryExample,
+    description: ErrorBoundaryDescription,
+    module: "src/ErrorBoundary/index.js"
   }
 ]
 
@@ -70,8 +78,19 @@ routeConfig.forEach(
   route => (route.component = TaskHOC(route.component, route.description))
 )
 
+const history = createBrowserHistory()
+
+const unlisten = history.listen((location, action) => {
+  const { module } = routeConfig.find(c => c.route === location.pathname) || {}
+  if (module && !location.search) {
+    history.push(`${location.pathname}?module="${module}"`)
+  }
+  window.scrollTo(0, 0)
+})
+
 function App() {
   const [finishedTasks, setFinishedTasks] = useState([])
+
   const toggleFinishedTask = path => () => {
     setFinishedTasks(finishedTasks => {
       if (finishedTasks.includes(path))
@@ -80,7 +99,7 @@ function App() {
     })
   }
   return (
-    <Router>
+    <Router history={history}>
       <div className="app-container">
         <nav>
           <Link className="nav-title" to="/">

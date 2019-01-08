@@ -1,5 +1,5 @@
 import React from "react"
-import TaskChecklist from "../../App/TaskChecklist"
+import TaskChecklist from "../App/TaskChecklist"
 
 const Description = ({ toggleFinishedTask }) => {
   return (
