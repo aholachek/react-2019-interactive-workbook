@@ -83,7 +83,7 @@ function App() {
         <div className="app-container">
           <ul className="sidebar">
             <Link className="sidebar-title" to="/">
-              React 2019 <br /> Interactive Workbook
+              React <br /> Interactive Workbook
             </Link>
             {routeConfig.map(({ route, title }, i) => (
               <li>
