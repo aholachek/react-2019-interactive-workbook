@@ -22,13 +22,17 @@ const About = () => {
       </p>
       <p>
         I've made a few practice tasks that should give you some concrete
-        practice implementing these new(ish) patterns.
+        experience implementing these new(ish) patterns.
       </p>
       <p>
         To get started,{" "}
         <Link to="/hooks/timer">just click on a task in the menu</Link> and
         follow the instructions! Each task should take between 5 and 25 minutes
         to complete.
+      </p>
+      <p>
+        If you get confused, search for the <code>TODO</code> comments in the
+        code.
       </p>
     </div>
   )

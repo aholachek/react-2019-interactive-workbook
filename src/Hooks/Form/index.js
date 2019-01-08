@@ -58,7 +58,10 @@ const HooksTest = () => {
                   id={`meal-${meal}`}
                   name="favoriteMeals"
                   value={meal}
-                  checked={formData.favoriteMeals.includes(meal)}
+                  checked={
+                    formData.favoriteMeals &&
+                    formData.favoriteMeals.includes(meal)
+                  }
                 />
                 {meal}
               </label>

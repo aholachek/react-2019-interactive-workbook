@@ -1,8 +1,8 @@
 import React from "react"
-import { createPortal } from "react-dom"
 
+// TODO: this component should use a portal
 const Modal = ({ children }) => {
-  return createPortal(children, document.getElementById("modal"))
+  return children
 }
 
 export default Modal

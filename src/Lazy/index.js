@@ -1,10 +1,6 @@
-import React, { Suspense, lazy, useState } from "react"
+import React, { useState } from "react"
 
-const LazilyLoadedComponent = lazy(() =>
-  import("./lazily-loaded-component" /* webpackChunkName: 'lazy-load-example' */)
-)
-
-const LazyExample = props => {
+const LazyExample = () => {
   const [
     showLazilyLoadedComponent,
     setLazilyLoadedComponentVisibility
@@ -22,16 +18,11 @@ const LazyExample = props => {
           click me to lazily load a component
         </button>
       </div>
-      {showLazilyLoadedComponent && (
-        <Suspense fallback={<div>Loading, please wait</div>}>
-          <LazilyLoadedComponent />
-        </Suspense>
-      )}
+      {showLazilyLoadedComponent &&
+        //TODO: add lazily loaded component
+        null}
     </div>
   )
 }
-
-LazyExample.defaultProps = {}
-LazyExample.propTypes = {}
 
 export default LazyExample

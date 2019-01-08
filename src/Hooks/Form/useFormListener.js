@@ -2,24 +2,10 @@ import { useState } from "react"
 import { getElementType, getCheckedCheckboxValues } from "./utilities"
 
 const useFormListener = (defaultValues = {}) => {
-  const [formState, setFormState] = useState(defaultValues)
-
-  const onFormChange = event => {
-    const elementType = getElementType(event.target)
-
-    let value = event.target.value
-    if (elementType === "checkbox") {
-      value = getCheckedCheckboxValues(event.target)
-    }
-
-    const name = event.target.name
-
-    setFormState({
-      ...formState,
-      [name]: value
-    })
-  }
-  return [onFormChange, formState]
+  // TODO: create a custom hook that will store form values
+  const onFormChange = () => {}
+  const formData = {}
+  return [onFormChange, formData]
 }
 
 export default useFormListener

@@ -7,26 +7,13 @@ class ErrorHandler extends Component {
     message: PropTypes.string
   }
 
-  static defaultProps = {
-    message: "Error detected, please try reloading the page"
-  }
+  state = {}
 
-  state = { hasError: false }
-
-  static getDerivedStateFromError(error) {
-    return { hasError: true }
-  }
-
-  componentDidCatch(error, info) {
-    this.props.logError && this.props.logError(error, info)
-  }
+  // TODO: add error handling
 
   render() {
     const { children, message } = this.props
-    if (this.state.hasError) {
-      return <div>{message}</div>
-    }
-    return <div>{children}</div>
+    return null
   }
 }
 

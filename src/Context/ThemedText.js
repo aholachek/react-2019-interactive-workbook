@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
-import { ThemeContext } from "./ThemeProviderComponent--edit-this-file"
 
 const ThemedText = () => {
-  const theme = useContext(ThemeContext)
+ // TODO: add theme from context
+  const theme = undefined
   const style =
     theme === "light"
       ? { color: "#000", backgroundColor: "#fff", border: "1px solid black" }
