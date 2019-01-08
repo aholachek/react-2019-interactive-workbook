@@ -1,22 +1,22 @@
 /* eslint import/no-webpack-loader-syntax: 0 */
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Router, Route, Link, NavLink } from "react-router-dom"
 import createBrowserHistory from "history/createBrowserHistory"
 import About from "./About"
-import TimerExample from "../UseEffect"
-import TimerDescription from "../UseEffect/Description"
-import FormExample from "../CustomHook"
-import FormDescription from "../CustomHook/Description"
-import ErrorBoundaryExample from "../ErrorBoundary"
-import ErrorBoundaryDescription from "../ErrorBoundary/Description"
-import ContextExample from "../Context"
-import ContextDescription from "../Context/Description"
-import MemoExample from "../Memo"
-import MemoDescription from "../Memo/Description"
-import LazyExample from "../Lazy"
-import LazyDescription from "../Lazy/Description"
-import PortalExample from "../Portal"
-import PortalDescription from "../Portal/Description"
+import TimerExample from "../6. UseEffect"
+import TimerDescription from "../6. UseEffect/Description"
+import FormExample from "../5. CustomHook"
+import FormDescription from "../5. CustomHook/Description"
+import ErrorBoundaryExample from "../7. ErrorBoundary"
+import ErrorBoundaryDescription from "../7. ErrorBoundary/Description"
+import ContextExample from "../1. Context"
+import ContextDescription from "../1. Context/Description"
+import MemoExample from "../2. Memo"
+import MemoDescription from "../2. Memo/Description"
+import LazyExample from "../3. Lazy"
+import LazyDescription from "../3. Lazy/Description"
+import PortalExample from "../4. Portal"
+import PortalDescription from "../4. Portal/Description"
 import TaskIndicator from "./SidebarTaskIndicator"
 import TaskHOC from "./TaskHOC"
 import "bulma/css/bulma.css"
@@ -81,11 +81,6 @@ routeConfig.forEach(
 const history = createBrowserHistory()
 
 const unlisten = history.listen((location, action) => {
-  const { module } = routeConfig.find(c => c.route === location.pathname) || {}
-  if (module) {
-    window.parent.location = `${window.parent.location.pathname}?module="${module}"`
-  }
-
   window.scrollTo(0, 0)
 })
 
@@ -119,7 +114,7 @@ function App() {
                   className="sidebarLink"
                 >
                   <TaskIndicator finished={finishedTasks.includes(route)}>
-                    {title}
+                    {i + 1}. {title}
                   </TaskIndicator>
                 </NavLink>
               </li>
@@ -127,7 +122,7 @@ function App() {
           </ul>
           <main>
             <Route path="/" component={About} exact />
-            {routeConfig.map(({ route, component: Component, title }) => (
+            {routeConfig.map(({ route, component: Component, title }, i) => (
               <Route
                 render={props => (
                   <Component
