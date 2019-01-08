@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import ThemedText from "./ThemedText"
 import ThemeProvider from "./ThemeProviderComponent"
-import styles from "./styles.module.scss"
+import styles from "./ignore-me/styles.module.scss"
 
 const IntermediateComponent = ({ children }) => <div>{children}</div>
 

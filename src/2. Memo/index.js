@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import styles from "./Grid.module.scss"
+import styles from "./ignore-me/Grid.module.scss"
 import GridSquare from "./GridSquare"
 
 const range = (end, start = 0) => [...new Array(end).keys()].slice(start)

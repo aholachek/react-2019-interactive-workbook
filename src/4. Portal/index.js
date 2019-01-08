@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from "./Portal.module.scss"
+import styles from "./ignore-me/Portal.module.scss"
 import ModalContent from "./ModalContent"
 import Modal from "./Modal"
 

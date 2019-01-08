@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Timer from "./timer"
-import styles from "./styles.module.scss"
+import styles from "./ignore-me/styles.module.scss"
 
 const TimerContainer = ({ setFinishedTasks }) => {
   const [timerType, setTimerType] = useState("seconds")
