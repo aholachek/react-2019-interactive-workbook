@@ -6,7 +6,7 @@
 }
 
 .modalContent {
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.8);
   color: #fff;
   width: 100%;
   min-height: 100vh;
@@ -16,4 +16,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  h1,
+  p {
+    color: #fff !important;
+  }
 }

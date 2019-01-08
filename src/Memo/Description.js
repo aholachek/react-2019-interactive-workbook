@@ -8,7 +8,7 @@ const Description = ({ toggleFinishedTask }) => {
         <span>
           First,{' '}
           <a href="https://reactjs.org/docs/react-api.html#reactmemo">
-            read the docs for <code>React.memo</code> if you haven't already
+            read the docs for <code>React.memo</code>.
           </a>
         </span>
         <span>
@@ -18,7 +18,7 @@ const Description = ({ toggleFinishedTask }) => {
         </span>
         <span>
           Take a look at <a href={window.location}></a>GridSquare and figure out the hack I've used to make
-          re-rendering expensive.
+          re-rendering expensive for demo purposes.
         </span>
         <span>
           Finally, figure out how to use <code>React.memo</code> to speed up the movement of the pink square.

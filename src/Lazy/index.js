@@ -1,5 +1,4 @@
 import React, { Suspense, lazy, useState } from "react"
-import PropTypes from "prop-types"
 
 const LazilyLoadedComponent = lazy(() =>
   import("./lazily-loaded-component" /* webpackChunkName: 'lazy-load-example' */)
@@ -12,13 +11,13 @@ const LazyExample = props => {
   ] = useState(false)
 
   return (
-    <div>
+    <div className="widget-container">
       <div>
         <button
           onClick={() =>
             setLazilyLoadedComponentVisibility(visibility => !visibility)
           }
-          className="button"
+          className="button mb-1"
         >
           click me to lazily load a component
         </button>

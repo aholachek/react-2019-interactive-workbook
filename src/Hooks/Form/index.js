@@ -16,8 +16,8 @@ const HooksTest = () => {
     alert(JSON.stringify(formData, true, 2))
   }
   return (
-    <div>
-      <h1 className="subtitle is-3">Food Survey</h1>
+    <div className="widget-container">
+      <h1 className="subtitle is-4">Food Survey</h1>
       <form onSubmit={onSubmit} onChange={onFormChange} className={styles.form}>
         <fieldset>
           <label className="label" htmlFor="favorite-food">

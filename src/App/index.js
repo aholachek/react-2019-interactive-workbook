@@ -71,7 +71,7 @@ routeConfig.forEach(
 )
 
 function App() {
-  const [finishedTasks, setFinishedTasks] = useState(["/portal"])
+  const [finishedTasks, setFinishedTasks] = useState([])
   const toggleFinishedTask = path => () => {
     setFinishedTasks(finishedTasks => {
       if (finishedTasks.includes(path))

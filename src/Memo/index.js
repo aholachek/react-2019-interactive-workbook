@@ -17,10 +17,12 @@ const Grid = () => {
     return () => clearInterval(intervalId)
   })
   return (
-    <div className={styles.grid}>
-      {range(gridCellCount).map((_, index) => (
-        <GridSquare highlighted={highlightedIndex === index} />
-      ))}
+    <div className="widget-container">
+      <div className={styles.grid}>
+        {range(gridCellCount).map((_, index) => (
+          <GridSquare highlighted={highlightedIndex === index} />
+        ))}
+      </div>
     </div>
   )
 }

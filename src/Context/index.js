@@ -1,14 +1,15 @@
 import React, { useState } from "react"
 import ThemedText from "./ThemedText--edit-this-file"
 import ThemeProvider from "./ThemeProviderComponent--edit-this-file"
+import styles from "./styles.module.scss"
 
 const IntermediateComponent = ({ children }) => <div>{children}</div>
 
 const ContextExample = () => {
   const [theme, setTheme] = useState("light")
   return (
-    <div>
-      <div>
+    <div className="widget-container">
+      <div className={styles.theme}>
         {["light", "dark"].map(themeType => (
           <label>
             <input

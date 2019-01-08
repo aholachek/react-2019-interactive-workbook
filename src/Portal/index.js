@@ -8,7 +8,7 @@ const PortalExample = () => {
   const toggleModal = () => setShowModal(showModal => !showModal)
 
   return (
-    <div>
+    <div className="widget-container">
       <div>
         <button onClick={toggleModal} className="button">
           show modal
