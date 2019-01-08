@@ -6,8 +6,14 @@ const Description = ({ toggleFinishedTask }) => {
     <div>
       <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
         <span>
-          First,{" "}
-          <a href="https://reactjs.org/docs/error-boundaries.html" target="_blank">
+          Open up the <code>src/3. Lazy/</code>folder in Code Sandbox. The files inside will be the ones you edit to complete the task.
+        </span>
+        <span>
+          Next,{" "}
+          <a
+            href="https://reactjs.org/docs/error-boundaries.html"
+            target="_blank"
+          >
             read the docs for React.lazy.
           </a>
         </span>

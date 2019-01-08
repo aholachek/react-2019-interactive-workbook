@@ -5,8 +5,11 @@ const Description = ({ toggleFinishedTask }) => {
   return (
     <div>
       <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
+      <span>
+          Open up the <code>src/4. Portal/</code>folder in Code Sandbox. The files inside will be the ones you edit to complete the task.
+        </span>
         <span>
-          First,{" "}
+          Next,{" "}
           <a href="https://reactjs.org/docs/portals.html" target="_blank">
             read the docs for React portals.
           </a>

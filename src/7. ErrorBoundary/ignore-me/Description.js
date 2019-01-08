@@ -5,8 +5,11 @@ const Description = ({ toggleFinishedTask }) => {
   return (
     <div>
       <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
+      <span>
+          Open up the <code>src/7. Error Boundary/</code>folder in Code Sandbox. The files inside will be the ones you edit to complete the task.
+        </span>
         <span>
-          First,{" "}
+          Next,{" "}
           <a href="https://reactjs.org/docs/error-boundaries.html" target="_blank">
             read the docs for error boundaries.
           </a>

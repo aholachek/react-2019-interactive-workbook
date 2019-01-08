@@ -6,7 +6,11 @@ const Description = ({ toggleFinishedTask }) => {
     <div>
       <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
         <span>
-          First,{" "}
+          Open up the <code>src/6. UseEffect/</code>folder in Code Sandbox.
+          The files inside will be the ones you edit to complete the task.
+        </span>
+        <span>
+          Next,{" "}
           <a href="https://reactjs.org/docs/hooks-effect.html" target="_blank">
             read the docs for the <code>useEffect</code> hook.
           </a>
