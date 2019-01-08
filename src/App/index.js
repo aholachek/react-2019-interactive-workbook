@@ -18,6 +18,7 @@ import PortalExample from "../Portal"
 import PortalDescription from "../Portal/Description"
 import TaskIndicator from "./SidebarTaskIndicator"
 import TaskHOC from "./TaskHOC"
+import "./index.scss"
 
 const routeConfig = [
   {
@@ -83,7 +84,7 @@ function App() {
         <div className="app-container">
           <ul className="sidebar">
             <Link className="sidebar-title" to="/">
-              React <br /> Interactive Workbook
+              React 2019 Interactive Workbook
             </Link>
             {routeConfig.map(({ route, title }, i) => (
               <li>

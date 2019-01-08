@@ -28,21 +28,25 @@ main {
 .app-container {
   display: flex;
   flex-direction: column-reverse;
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
     display: flex;
     flex-direction: row;
   }
 }
 
 .sidebar {
-  margin-top: 4rem;
-  width: 15rem;
-  @media (min-width: 768px) {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  background: #f5f5f5;
+  border-radius: 5px;
+  @media (min-width: 800px) {
     margin-top: 0;
     width: 11rem;
+    background: white;
+    padding: 0;
   }
   margin-right: 3rem;
-  border-radius: 4px;
   > li {
     margin-bottom: 0.25rem;
     border-radius: 4px;
