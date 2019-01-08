@@ -1,0 +1,25 @@
+@import "~bulma/sass/utilities/initial-variables.sass";
+
+.taskIndicator {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.taskIndicatorCheck {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100px;
+  background-color: #ecebeb;
+  margin-right: 1rem;
+  &.checked {
+    background-color: $green;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  width: 1rem;
+  left: 4px;
+  top: 5px;
+}

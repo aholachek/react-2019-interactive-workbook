@@ -1,0 +1,35 @@
+@import "~bulma/sass/utilities/initial-variables.sass";
+
+.taskContainer {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.checkbox {
+  cursor: pointer;
+  span {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    background-color: #ecebeb;
+
+    margin-right: 1rem;
+    display: block;
+  }
+  &:hover,
+  &:focus {
+    span {
+      background-color: #d8d8d8;
+    }
+  }
+  input:checked + span {
+    background-color: $blue;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  width: 1rem;
+  left: 4px;
+  top: 5px;
+}

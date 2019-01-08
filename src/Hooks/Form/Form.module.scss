@@ -1,0 +1,11 @@
+.form {
+  max-width: 20rem;
+  fieldset {
+    border: none;
+    margin-bottom: 1rem;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: .5rem;
+  }
+}

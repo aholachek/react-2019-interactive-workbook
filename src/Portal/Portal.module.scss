@@ -1,0 +1,19 @@
+.modalContainer {
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.modalContent {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
