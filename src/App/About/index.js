@@ -17,18 +17,19 @@ const About = () => {
       <p>(Ok, I have the time, I just fear change.)</p>
 
       <p>
-        Reading the docs is an imperfect solution since without practice, it's
-        hard to say you truly understand what's going on.
-      </p>
-      <p>
-        I've made a few practice tasks that should give you some concrete
-        practice implementing these new(ish) patterns.
+        Just reading the docs without practicing isn't a great way to retain
+        knowledge, so I've made a few practice tasks that should give you some
+        concrete experience implementing these new(ish) patterns.
       </p>
       <p>
         To get started,{" "}
-        <Link to="/hooks/timer">just click on a task in the menu</Link> and
-        follow the instructions! Each task should take between 5 and 25 minutes
-        to complete.
+        <Link to="/context">just click on a task in the menu</Link> and follow
+        the instructions! Each task should take between 5 and 25 minutes to
+        complete.
+      </p>
+      <p>
+        If you get confused, search for the <code>TODO</code> comments in the
+        code.
       </p>
     </div>
   )
