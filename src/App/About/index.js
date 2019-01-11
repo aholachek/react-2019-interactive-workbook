@@ -28,7 +28,7 @@ const About = () => {
       <ol>
         <li>A set of instructions</li>
         <li>A non-working component that you must fix by editing the files in the relevant folder</li>
-        <li>An example of the component in it's final, working state.</li>
+        <li>An example of the component in its final, working state.</li>
       </ol>
       <p>
       If you get confused, search for the <code>TODO</code> comments in the code, or (if you must) take a peek at the <code>answers</code> folder in each task.
