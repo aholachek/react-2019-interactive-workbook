@@ -16,7 +16,6 @@ import ContextExample from "../1_Context"
 import ContextAnswer from "../1_Context/answers"
 import ContextDescription from "../1_Context/ignore-me/Description"
 import MemoExample from "../2_Memo"
-import MemoAnswer from "../2_Memo/answers"
 import MemoDescription from "../2_Memo/ignore-me/Description"
 import LazyExample from "../3_Lazy"
 import LazyAnswer from "../3_Lazy/answers"
@@ -40,14 +39,14 @@ const routeConfig = [
   },
   {
     route: "/memo",
-    title: "React.memo",
+    title: "Memo",
     component: MemoExample,
     description: MemoDescription,
     module: "src/Memo/index.js"
   },
   {
     route: "/lazy",
-    title: "React.lazy",
+    title: "Lazy",
     component: LazyExample,
     answerComponent: LazyAnswer,
     description: LazyDescription,
