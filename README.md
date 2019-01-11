@@ -1,6 +1,7 @@
 # React 2019 Interactive Workbook
 
-### React Hooks? Context? Lazy? Memo? Who has time to learn about all of this stuff?
+### React Hooks? Context? Lazy? Memo? ErrorBoundaries?
+### Who has time to learn about all of this stuff?
 
 <img src="src/App/About/oldman.jpg" alt="old man yells at cloud">
 

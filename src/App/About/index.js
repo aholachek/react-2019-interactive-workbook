@@ -8,7 +8,7 @@ const About = () => {
     <div className={`${styles.about} card`}>
       <h1 className="title is-3">React 2019 Interactive Workbook</h1>
       <p>
-        React Hooks? Context? Lazy? Memo? Who has time to learn about all of
+        React Hooks? Context? Lazy? Memo? ErrorBoundaries?? Who has time to learn about all of
         this stuff?
       </p>
 
