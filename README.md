@@ -11,7 +11,7 @@ Just reading the docs without putting your new knowledge into practice isn't a g
 
 ## How to get started
 
-Either [fork on CodeSandbox](https://codesandbox.io/s/github/aholachek/react-interactive-workbook) or fork this repo and run `yarn` and `yarn start`.
+Either [fork on CodeSandbox](https://codesandbox.io/s/github/aholachek/react-interactive-workbook?module=/src/1_Context/ThemeProviderContainer.js) or fork this repo and run `yarn` and `yarn start`.
 
 Next, click on a task in the menu and follow the instructions! Each task should take between 5 and 30 minutes to complete. For most tasks, you'll see three cards:
 
