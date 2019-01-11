@@ -1,6 +1,6 @@
 /* eslint import/no-webpack-loader-syntax: 0 */
 import React, { useState } from "react"
-import { Router, Route, Link, NavLink } from "react-router-dom"
+import { Router, Route, Link, NavLink, Redirect } from "react-router-dom"
 import createBrowserHistory from "history/createBrowserHistory"
 import About from "./About"
 import TimerExample from "../6_UseEffect"
@@ -114,7 +114,7 @@ function App() {
     <Router history={history}>
       <div className="app-container">
         <nav>
-          <Link className="nav-title" to="/">
+          <Link className="nav-title" to="/about">
             React 2019 Interactive Workbook
           </Link>
         </nav>
@@ -137,7 +137,9 @@ function App() {
             ))}
           </ul>
           <main>
-            <Route path="/" component={About} exact />
+            <Route path="/about" component={About} />
+            <Route path="/" render={() => <Redirect to="/context" />} />
+
             {routeConfig.map(({ route, component: Component, title }, i) => (
               <Route
                 render={props => (

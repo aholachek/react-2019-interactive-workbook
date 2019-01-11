@@ -7,7 +7,7 @@
 
 (Ok, I have the time, I just fear change.)
 
-Just reading the docs without putting your new knowledge into practice isn't a great way to learn, so I've made a few practice tasks that should give you some concrete experience implementing these new(ish) patterns.
+Here are a few practice tasks that should give you some concrete experience implementing these new(ish) patterns.
 
 ## How to get started
 
