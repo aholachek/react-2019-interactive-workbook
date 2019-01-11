@@ -1,9 +1,8 @@
 import React from "react"
 
-const TaskHOC = (Component, Description) => ({
+const TaskHOC = (Component, AnswerComponent, Description) => ({
   title,
-  toggleFinishedTask,
-  isFinished
+  toggleFinishedTask
 }) => {
   return (
     <div>
@@ -12,16 +11,31 @@ const TaskHOC = (Component, Description) => ({
           {title}
         </h1>
       </div>
-      <div style={{ marginBottom: "1rem" }}>
+      <div className="card">
         <Description toggleFinishedTask={toggleFinishedTask} />
       </div>
 
-      <Component />
+      <h2 className="title is-5" style={{ marginTop: "2rem" }}>
+        Task:
+      </h2>
+
+      <div className="card">
+        <Component />
+      </div>
+
+      {AnswerComponent && (
+        <div>
+          <h2 className="title is-5" style={{ marginTop: "2rem" }}>
+            Expected behavior:
+          </h2>
+
+          <div className="card">
+            <AnswerComponent />
+          </div>
+        </div>
+      )}
     </div>
   )
 }
-
-TaskHOC.defaultProps = {}
-TaskHOC.propTypes = {}
 
 export default TaskHOC

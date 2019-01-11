@@ -3,20 +3,27 @@ import React, { useState } from "react"
 import { Router, Route, Link, NavLink } from "react-router-dom"
 import createBrowserHistory from "history/createBrowserHistory"
 import About from "./About"
-import TimerExample from "../6. UseEffect"
-import TimerDescription from "../6. UseEffect/ignore-me/Description"
-import FormExample from "../5. Custom Hook"
-import FormDescription from "../5. Custom Hook/ignore-me/Description"
-import ErrorBoundaryExample from "../7. ErrorBoundary"
-import ErrorBoundaryDescription from "../7. ErrorBoundary/ignore-me/Description"
-import ContextExample from "../1. Context"
-import ContextDescription from "../1. Context/ignore-me/Description"
-import MemoExample from "../2. Memo"
-import MemoDescription from "../2. Memo/ignore-me/Description"
-import LazyExample from "../3. Lazy"
-import LazyDescription from "../3. Lazy/ignore-me/Description"
-import PortalExample from "../4. Portal"
-import PortalDescription from "../4. Portal/ignore-me/Description"
+import TimerExample from "../6_UseEffect"
+import TimerAnswer from "../6_UseEffect/answers"
+import TimerDescription from "../6_UseEffect/ignore-me/Description"
+import FormExample from "../5_Custom Hook"
+import FormAnswer from "../5_Custom Hook/answers"
+import FormDescription from "../5_Custom Hook/ignore-me/Description"
+import ErrorBoundaryExample from "../7_ErrorBoundary"
+import ErrorBoundaryAnswer from "../7_ErrorBoundary/answers"
+import ErrorBoundaryDescription from "../7_ErrorBoundary/ignore-me/Description"
+import ContextExample from "../1_Context"
+import ContextAnswer from "../1_Context/answers"
+import ContextDescription from "../1_Context/ignore-me/Description"
+import MemoExample from "../2_Memo"
+import MemoAnswer from "../2_Memo/answers"
+import MemoDescription from "../2_Memo/ignore-me/Description"
+import LazyExample from "../3_Lazy"
+import LazyAnswer from "../3_Lazy/answers"
+import LazyDescription from "../3_Lazy/ignore-me/Description"
+import PortalExample from "../4_Portal"
+import PortalAnswer from "../4_Portal/answers"
+import PortalDescription from "../4_Portal/ignore-me/Description"
 import TaskIndicator from "./SidebarTaskIndicator"
 import TaskHOC from "./TaskHOC"
 import "bulma/css/bulma.css"
@@ -27,6 +34,7 @@ const routeConfig = [
     route: "/context",
     title: "Context",
     component: ContextExample,
+    answerComponent: ContextAnswer,
     description: ContextDescription,
     module: "src/Context/index.js"
   },
@@ -41,6 +49,7 @@ const routeConfig = [
     route: "/lazy",
     title: "React.lazy",
     component: LazyExample,
+    answerComponent: LazyAnswer,
     description: LazyDescription,
     module: "src/Lazy/index.js"
   },
@@ -48,6 +57,7 @@ const routeConfig = [
     route: "/portal",
     title: "Portal",
     component: PortalExample,
+    answerComponent: PortalAnswer,
     description: PortalDescription,
     module: "src/Portal/index.js"
   },
@@ -55,6 +65,7 @@ const routeConfig = [
     route: "/CustomHook",
     title: "Custom Hook",
     component: FormExample,
+    answerComponent: FormAnswer,
     description: FormDescription,
     module: "src/CustomHook/index.js"
   },
@@ -62,6 +73,7 @@ const routeConfig = [
     route: "/timer",
     title: "UseEffect Hook",
     component: TimerExample,
+    answerComponent: TimerAnswer,
     description: TimerDescription,
     module: "src/UseEffect/index.js"
   },
@@ -69,14 +81,19 @@ const routeConfig = [
     route: "/error-boundary",
     title: "Error Boundary",
     component: ErrorBoundaryExample,
+    answerComponent: ErrorBoundaryAnswer,
     description: ErrorBoundaryDescription,
     module: "src/ErrorBoundary/index.js"
   }
 ]
 
-routeConfig.forEach(
-  route => (route.component = TaskHOC(route.component, route.description))
-)
+routeConfig.forEach(route => {
+  route.component = TaskHOC(
+    route.component,
+    route.answerComponent,
+    route.description
+  )
+})
 
 const history = createBrowserHistory()
 
@@ -104,7 +121,6 @@ function App() {
         </nav>
         <div className="flex-container">
           <ul className="sidebar">
-            <h2 className="subtitle is-5 mb-1">Tasks</h2>
             {routeConfig.map(({ route, title }, i) => (
               <li>
                 <NavLink
@@ -114,7 +130,7 @@ function App() {
                   className="sidebarLink"
                 >
                   <TaskIndicator finished={finishedTasks.includes(route)}>
-                    {i + 1}. {title}
+                    {i + 1} {title}
                   </TaskIndicator>
                 </NavLink>
               </li>

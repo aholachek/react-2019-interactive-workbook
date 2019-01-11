@@ -22,9 +22,13 @@ ol {
   padding: 1rem;
 }
 
+.card {
+  @include card();
+  margin-bottom: 1rem;
+}
+
 main {
   width: 100%;
-  @include card();
   min-height: 437px;
   padding-bottom: 2rem;
 }
@@ -51,11 +55,10 @@ $breakpoint: 750px;
 }
 
 .sidebar {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 100%;
-  @include card();
   @media (min-width: $breakpoint) {
-    margin-top: 0;
+    margin-top: 4rem;
     width: 14.5rem;
     margin-left: 1rem;
   }
@@ -76,6 +79,9 @@ $breakpoint: 750px;
   margin-bottom: 1rem !important;
 }
 
+.ml-1 {
+  margin-left: 1rem !important;
+}
 
 .nav-title {
   font-weight: bold;

@@ -7,19 +7,19 @@
 }
 
 .taskIndicatorCheck {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
   border-radius: 100px;
-  background-color: #ecebeb;
+  border: 1px solid fade-out($blue, .6);
   margin-right: .5rem;
   &.checked {
-    background-color: $red;
+    background-color: $blue;
   }
 }
 
 .checkmark {
   position: absolute;
-  width: 1rem;
-  left: 4px;
+  width:.95rem;
+  left: 3px;
   top: 5px;
 }

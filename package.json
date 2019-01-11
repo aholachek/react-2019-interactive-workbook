@@ -1,5 +1,5 @@
 {
-  "name": "React 2019 Interactive Workbook ",
+  "name": "react-2019-interactive-workbook",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,8 @@
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
     "raw-loader": "^1.0.0",
     "react-scripts": "2.1.2",
     "react-testing-library": "^5.4.2"
