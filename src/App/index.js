@@ -121,6 +121,7 @@ function App() {
         </nav>
         <div className="flex-container">
           <ul className="sidebar">
+            <h2 class="title is-5">Task Menu</h2>
             {routeConfig.map(({ route, title }, i) => (
               <li>
                 <NavLink
