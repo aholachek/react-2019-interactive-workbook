@@ -11,7 +11,6 @@ code {
 }
 
 ol {
-  margin-left: 1rem;
   li {
     margin-bottom: 0.75rem;
   }
@@ -21,6 +20,9 @@ ol {
   background: #fff;
   border-radius: 5px;
   padding: 1rem;
+  ol {
+    margin-left: 1rem;
+  }
 }
 
 .card {
@@ -56,10 +58,8 @@ $breakpoint: 750px;
 }
 
 .sidebar {
-  margin-top: 2rem;
   width: 100%;
   @media (min-width: $breakpoint) {
-    margin-top: 0;
     width: 14.5rem;
     margin-left: 1rem;
   }
