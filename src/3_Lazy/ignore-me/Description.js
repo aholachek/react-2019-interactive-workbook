@@ -33,9 +33,12 @@ const Description = ({ toggleFinishedTask }) => {
           looks like this:
           <img src={example} alt="named, lazy-loaded bundle" />
           <p>
-            <b>Note:</b>This is only visible in dev tools if you are running the
-            project locally. If you are using CodeSandbox, the bundle will not
-            be visible.
+            <b>Note:</b>The bundle will not be visible in the network panel if
+            you are using CodeSandbox, you would have to{" "}
+            <a href="https://github.com/aholachek/react-2019-interactive-workbook">
+              check out and run the project locally
+            </a>
+            .
           </p>
         </span>
       </TaskChecklist>
