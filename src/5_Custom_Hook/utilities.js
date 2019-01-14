@@ -1,21 +1,13 @@
-/** returns 'select'| 'text' | 'radio' | 'checkbox' */
+/** returns 'select-one' | 'select-multiple' | 'text' | 'radio' | 'checkbox' etc */
 export const getElementType = event => {
-  const element = event.target
-  let type
-  const baseType = element.nodeName.toLowerCase()
-  if (baseType === "input") {
-    type = element.type.toLowerCase()
-  }
-  return type || baseType
+  return event.target.type
 }
 
 /** returns an array of values from the checked checkboxes */
 export const getCheckedCheckboxValues = event => {
   const checkboxElement = event.target
   const allCheckboxes = [
-    ...checkboxElement
-      .closest("form")
-      .querySelectorAll(`[name="${checkboxElement.name}"]`)
+    ...checkboxElement.form.querySelectorAll(`[name="${checkboxElement.name}"]`)
   ]
   return allCheckboxes
     .filter(checkbox => checkbox.checked)
