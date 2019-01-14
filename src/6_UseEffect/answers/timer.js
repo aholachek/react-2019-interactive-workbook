@@ -9,7 +9,6 @@ const TimeSinceMounted = ({ type }) => {
         prevSecondsSinceMounted => prevSecondsSinceMounted + 1
       )
     }, 1000)
-
     return () => clearInterval(intervalId)
   })
   return (
