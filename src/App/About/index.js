@@ -8,8 +8,8 @@ const About = () => {
     <div className={`${styles.about} card`}>
       <h1 className="title is-3">React 2019 Interactive Workbook</h1>
       <p>
-        React Hooks? Context? Lazy? Memo? ErrorBoundaries?? Who has time to
-        learn about all of this stuff?
+        React Hooks? Context? Lazy? Memo? Who has time to learn about all of
+        this stuff?
       </p>
 
       <img className={styles.img} src={oldMan} alt="old man yells at cloud" />
@@ -21,7 +21,13 @@ const About = () => {
         to speed on the basics of some new(ish) React patterns.
       </p>
       <p>
-        To get started,{" "}
+        If you'd prefer to do the tasks locally rather than in Code Sandbox,{" "}
+        <a href="https://github.com/aholachek/react-2019-interactive-workbook">
+          fork the repo here.
+        </a>
+      </p>
+      <p>
+        To get started, fork this Code Sandbox, then{" "}
         <Link to="/context">just click on a task in the menu</Link> and follow
         the instructions! Each task should take between 5 and 25 minutes to
         complete. For most tasks, you'll see three cards:

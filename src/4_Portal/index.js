@@ -7,19 +7,21 @@ const PortalExample = () => {
   const [showModal, setShowModal] = useState(false)
   const toggleModal = () => setShowModal(showModal => !showModal)
 
-  useEffect(
-    () => {
-      const body = document.querySelector("body")
-      if (showModal) {
-        body.style.overflow = "hidden"
-        body.style.height = "100vh"
-      } else {
-        body.style.overflow = ""
-        body.style.height = ""
-      }
-    },
-    [showModal]
-  )
+  // TODO: uncomment this once the portal is working correctly
+  // it will prevent the body element from scrolling behind the portal
+  // useEffect(
+  //   () => {
+  //     const body = document.querySelector("body")
+  //     if (showModal) {
+  //       body.style.overflow = "hidden"
+  //       body.style.height = "100vh"
+  //     } else {
+  //       body.style.overflow = ""
+  //       body.style.height = ""
+  //     }
+  //   },
+  //   [showModal]
+  // )
 
   return (
     <div>
