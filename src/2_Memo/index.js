@@ -13,7 +13,7 @@ const Grid = () => {
       setHighlightedIndex(
         highlightedIndex => (highlightedIndex + 1) % gridCellCount
       )
-    }, 100)
+    }, 10)
     return () => clearInterval(intervalId)
   })
   return (
