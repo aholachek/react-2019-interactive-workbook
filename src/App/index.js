@@ -141,9 +141,7 @@ function App() {
             ))}
           </ul>
           <main>
-            <Route path="/about" component={About} />
-            <Route path="/" exact render={() => <Redirect to="/context" />} />
-
+            <Route path="/" component={About} />
             {routeConfig.map(({ route, component: Component, title }, i) => (
               <Route
                 key={route}
