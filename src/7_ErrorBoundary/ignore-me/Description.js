@@ -30,10 +30,10 @@ const Description = ({ toggleFinishedTask }) => {
           </p>
           <p>
             <b>Note:</b> Even when the <code>ErrorBoundary</code> is successfuly
-            implemented, you will still see an error overlay in development! If
-            you close it with the 'x' button on the upper right, you should see
-            the rendered page with the provided <code>message</code> prop, which
-            is what users would see in production.
+            implemented, if you are doing this task locally rather than on Code
+            Sandbox, you will still see an error overlay in development. If you
+            close it with the 'x' button on the upper right, you should see the
+            rendered page, which is what users would see in production.
           </p>
         </span>
         <span>
