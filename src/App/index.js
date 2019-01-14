@@ -1,5 +1,6 @@
 /* eslint import/no-webpack-loader-syntax: 0 */
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import useLocalStorageState from "./useLocalStorageState"
 import { Router, Route, Link, NavLink, Redirect } from "react-router-dom"
 import createBrowserHistory from "history/createBrowserHistory"
 import About from "./About"
@@ -101,7 +102,10 @@ const unlisten = history.listen((location, action) => {
 })
 
 function App() {
-  const [finishedTasks, setFinishedTasks] = useState([])
+  const [finishedTasks, setFinishedTasks] = useLocalStorageState(
+    "finishedTasks",
+    []
+  )
 
   const toggleFinishedTask = path => () => {
     setFinishedTasks(finishedTasks => {
@@ -120,9 +124,9 @@ function App() {
         </nav>
         <div className="flex-container">
           <ul className="sidebar">
-            <h2 class="title is-5">Task Menu</h2>
+            <h2 className="title is-5">Task Menu</h2>
             {routeConfig.map(({ route, title }, i) => (
-              <li>
+              <li key={route}>
                 <NavLink
                   to={route}
                   exact={true}
@@ -142,6 +146,7 @@ function App() {
 
             {routeConfig.map(({ route, component: Component, title }, i) => (
               <Route
+                key={route}
                 render={props => (
                   <Component
                     {...props}

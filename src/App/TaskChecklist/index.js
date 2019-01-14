@@ -1,12 +1,18 @@
-import React, { useState, Children } from "react"
+import React, { Children } from "react"
+import useLocalStorageState from "../useLocalStorageState"
 import styles from "./index.module.scss"
 import check from "../SidebarTaskIndicator/checkmark.svg"
 
-const Tasks = ({ children, toggleFinishedTask }) => {
-  const [completedTasks, setCompleted] = useState([])
+const Tasks = ({ children, toggleFinishedTask, localStorageKey }) => {
+  const [completedTasks, setCompleted] = useLocalStorageState(
+    localStorageKey,
+    []
+  )
+
+  console.log(completedTasks)
+
   const listChildren = Children.toArray(children)
   const toggleTaskCompleted = index => {
-    debugger
     if (completedTasks.includes(index)) {
       if (completedTasks.length === listChildren.length) toggleFinishedTask()
       return setCompleted(completedTasks.filter(t => t !== index))
@@ -17,12 +23,13 @@ const Tasks = ({ children, toggleFinishedTask }) => {
   return (
     <ul>
       {listChildren.map((task, i) => (
-        <li className={styles.taskContainer}>
+        <li className={styles.taskContainer} key={i}>
           <label className={styles.checkbox}>
             <input
               type="checkbox"
               onChange={() => toggleTaskCompleted(i)}
               className="is-sr-only"
+              checked={completedTasks.includes(i)}
             />
             <span title="complete task">
               {completedTasks.includes(i) && (
@@ -36,8 +43,5 @@ const Tasks = ({ children, toggleFinishedTask }) => {
     </ul>
   )
 }
-
-Tasks.defaultProps = {}
-Tasks.propTypes = {}
 
 export default Tasks

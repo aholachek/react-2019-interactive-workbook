@@ -4,10 +4,10 @@ import TaskChecklist from "../../App/TaskChecklist"
 const Description = ({ toggleFinishedTask }) => {
   return (
     <div>
-      <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
+      <TaskChecklist toggleFinishedTask={toggleFinishedTask} localStorageKey='use-effect'>
         <span>
           I've reviewed{" "}
-          <a href="https://reactjs.org/docs/hooks-effect.html" target="_blank">
+          <a href="https://reactjs.org/docs/hooks-effect.html" target="_blank" rel="noopener noreferrer">
             the docs for the <code>useEffect</code> hook.
           </a>
         </span>

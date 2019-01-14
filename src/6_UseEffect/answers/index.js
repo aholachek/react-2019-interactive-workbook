@@ -6,11 +6,11 @@ const TimerContainer = ({ setFinishedTasks }) => {
   const [timerType, setTimerType] = useState("seconds")
 
   return (
-    <div >
+    <div>
       <div className={styles.type}>
         <span>Show:</span>
         {["seconds", "milliseconds"].map(type => (
-          <label>
+          <label key={type}>
             <input
               type="radio"
               name="type1"

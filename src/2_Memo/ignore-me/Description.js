@@ -4,12 +4,12 @@ import TaskChecklist from "../../App/TaskChecklist"
 const Description = ({ toggleFinishedTask }) => {
   return (
     <div>
-      <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
+      <TaskChecklist toggleFinishedTask={toggleFinishedTask} localStorageKey='memo'>
         <span>
           I've reviewed{" "}
           <a
             href="https://reactjs.org/docs/react-api.html#reactmemo"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             the docs for React.memo.
           </a>

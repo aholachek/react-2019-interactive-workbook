@@ -4,10 +4,10 @@ import TaskChecklist from "../../App/TaskChecklist"
 const Description = ({ toggleFinishedTask }) => {
   return (
     <div>
-      <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
+      <TaskChecklist toggleFinishedTask={toggleFinishedTask} localStorageKey='context'>
         <span>
           I've reviewed{" "}
-          <a href="https://reactjs.org/docs/context.html" target="_blank">
+          <a href="https://reactjs.org/docs/context.html" target="_blank" rel="noopener noreferrer">
             the docs for React.context.
           </a>
         </span>

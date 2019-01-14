@@ -5,12 +5,12 @@ import example from "./example.png"
 const Description = ({ toggleFinishedTask }) => {
   return (
     <div>
-      <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
+      <TaskChecklist toggleFinishedTask={toggleFinishedTask} localStorageKey='lazy'>
         <span>
           I've reviewed{" "}
           <a
             href="https://reactjs.org/docs/code-splitting.html#reactlazy"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
           >
             the docs for React.lazy.
           </a>

@@ -8,10 +8,10 @@ const IntermediateComponent = ({ children }) => <div>{children}</div>
 const ContextExample = () => {
   const [theme, setTheme] = useState("light")
   return (
-    <div >
+    <div>
       <div className={styles.theme}>
         {["light", "dark"].map(themeType => (
-          <label>
+          <label key={themeType}>
             <input
               type="radio"
               name="themeType1"

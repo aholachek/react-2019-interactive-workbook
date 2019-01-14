@@ -59,6 +59,8 @@ $breakpoint: 750px;
 
 .sidebar {
   width: 100%;
+  font-weight: bold;
+
   @media (min-width: $breakpoint) {
     width: 14.5rem;
     margin-left: 1rem;
