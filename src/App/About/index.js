@@ -23,7 +23,7 @@ const About = () => {
       <p>
         If you'd prefer to do the tasks locally rather than in Code Sandbox,{" "}
         <a href="https://github.com/aholachek/react-2019-interactive-workbook">
-          fork the repo here.
+          you can clone the repo here.
         </a>
       </p>
       <p>
@@ -33,12 +33,17 @@ const About = () => {
         complete. For most tasks, you'll see three cards:
       </p>
       <ol>
-        <li>A set of instructions</li>
         <li>
-          A non-working component that you must fix by editing the files in the
-          relevant folder
+          A set of instructions that you can complete by checking them off.
         </li>
-        <li>An example of the component in its final, working state.</li>
+        <li>
+          A non-working, <code>Task</code> component that you must fix by
+          editing the files in the relevant folder.
+        </li>
+        <li>
+          An <code>Expected behavior</code> example of the component in its
+          final, working state
+        </li>
       </ol>
       <p>
         If you get confused, search for the <code>TODO</code> comments in the
