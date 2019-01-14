@@ -47,7 +47,7 @@ const About = () => {
       </ol>
       <p>
         If you get confused, search for the <code>TODO</code> comments in the
-        code, or (if you must) take a peek at the <code>answers</code> folder in
+        code, or take a peek at the <code>answers</code> folder in
         each task.
       </p>
     </div>

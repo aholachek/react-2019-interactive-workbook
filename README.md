@@ -20,4 +20,4 @@ Next, click on a task in the menu and follow the instructions! Each task should 
 2. A non-working component that you must fix by editing the files in the relevant folder.
 3. An example of the component in its final, working state.
 
-If you get confused, search for the `TODO` comments in the code, or (if you must) take a peek at the `answers` folder in each task.
+If you get confused, search for the `TODO` comments in the code, or take a peek at the `answers` folder in each task.
