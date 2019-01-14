@@ -6,22 +6,25 @@ const Description = ({ toggleFinishedTask }) => {
     <div>
       <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
         <span>
-          Open up the <code>src/1_Context/</code>folder. The
-          files inside will be the ones you edit to complete the task.
-        </span>
-        <span>
-          Next,{" "}
+          I've reviewed{" "}
           <a href="https://reactjs.org/docs/context.html" target="_blank">
-            read the docs for React.context.
+            the docs for React.context.
           </a>
         </span>
         <span>
-          Edit <code>ThemeProviderContainer</code> to pass down a single
-          value&mdash;<code>theme</code>&mdash; anywhere in the tree.
+          I've edited <code>src/1_Context/ThemeProviderContainer</code> to pass
+          down a single value&mdash;<code>theme</code>&mdash; anywhere in the
+          tree.
         </span>
         <span>
-          Edit the <code>ThemedText</code> component to ingest the theme context
-          passed down and render the correct text style.
+          I've edited the <code>src/1_Context/ThemedText</code> component to
+          ingest the theme context passed down and render the correct text
+          style.
+        </span>
+        <span>
+          I've confirmed that the behavior of the <code>Task</code> component
+          and the <code>Expected behavior</code>
+          component are identical.
         </span>
       </TaskChecklist>
     </div>

@@ -6,9 +6,9 @@ import About from "./About"
 import TimerExample from "../6_UseEffect"
 import TimerAnswer from "../6_UseEffect/answers"
 import TimerDescription from "../6_UseEffect/ignore-me/Description"
-import FormExample from "../5_Custom Hook"
-import FormAnswer from "../5_Custom Hook/answers"
-import FormDescription from "../5_Custom Hook/ignore-me/Description"
+import FormExample from "../5_Custom_Hook"
+import FormAnswer from "../5_Custom_Hook/answers"
+import FormDescription from "../5_Custom_Hook/ignore-me/Description"
 import ErrorBoundaryExample from "../7_ErrorBoundary"
 import ErrorBoundaryAnswer from "../7_ErrorBoundary/answers"
 import ErrorBoundaryDescription from "../7_ErrorBoundary/ignore-me/Description"
@@ -138,7 +138,7 @@ function App() {
           </ul>
           <main>
             <Route path="/about" component={About} />
-            <Route path="/" render={() => <Redirect to="/context" />} />
+            <Route path="/" exact render={() => <Redirect to="/context" />} />
 
             {routeConfig.map(({ route, component: Component, title }, i) => (
               <Route

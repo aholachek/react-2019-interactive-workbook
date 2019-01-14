@@ -1,7 +1,7 @@
 import React, { useState, lazy, Suspense } from "react"
 
 const LazilyLoaded = lazy(() =>
-  import("./lazily-loaded-component" /* webpack-chunk-name: LazilyLoaded */)
+  import("./lazily-loaded-component" /* webpackChunkName: "LazilyLoaded" */)
 )
 
 const LazyExample = () => {
@@ -23,7 +23,7 @@ const LazyExample = () => {
         </button>
       </div>
       {showLazilyLoadedComponent && (
-        <Suspense fallback={() => "Loading..."}>
+        <Suspense fallback={<div>"Loading..."</div>}>
           <LazilyLoaded />
         </Suspense>
       )}

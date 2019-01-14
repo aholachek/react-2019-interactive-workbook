@@ -1,6 +1,4 @@
-import React, { useState, lazy, Suspense } from "react"
-
-const LazilyLoaded = lazy(() => import("./lazily-loaded-component" /* webpack-chunk-name: LazilyLoaded */))
+import React, { useState } from "react"
 
 const LazyExample = () => {
   const [
@@ -9,7 +7,7 @@ const LazyExample = () => {
   ] = useState(false)
 
   return (
-    <div >
+    <div>
       <div>
         <button
           onClick={() =>
@@ -20,12 +18,9 @@ const LazyExample = () => {
           click me to lazily load a component
         </button>
       </div>
-      {showLazilyLoadedComponent && (
+      {showLazilyLoadedComponent &&
         //TODO: add lazily loaded component
-        <Suspense fallback={() => "Loading..."}>
-          <LazilyLoaded />
-        </Suspense>
-      )}
+        null}
     </div>
   )
 }

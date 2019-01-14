@@ -1,13 +1,14 @@
 # React 2019 Interactive Workbook
 
-### React Hooks? Context? Lazy? Memo? Error Boundaries?
-### Who has time to learn about all this new stuff?
+React Hooks? Context? Lazy? Memo? Error Boundaries?
 
-<img src="src/App/About/oldman.jpg" alt="old man yells at cloud" width="400px">
+Who has time to learn about all this new stuff?
+
+<img src="src/App/About/oldman.jpg" alt="old man yells at cloud" width="300px">
 
 (Ok, I have the time, I just fear change.)
 
-Here are a few practice tasks that should give you some concrete experience implementing these new(ish) patterns.
+The workbook consists of a series of tasks that will get you quickly up to speed on the basics of some new(ish) React patterns.
 
 ## How to get started
 

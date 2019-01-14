@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 
 const TimeSinceMounted = ({ type }) => {
-  // TODO: start a counter as soon as the component is mounted
   const [secondsSinceMounted, setSecondsSinceMounted] = useState(0)
   useEffect(() => {
     const intervalId = setInterval(() => {

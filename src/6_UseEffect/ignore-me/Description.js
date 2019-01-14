@@ -6,27 +6,24 @@ const Description = ({ toggleFinishedTask }) => {
     <div>
       <TaskChecklist toggleFinishedTask={toggleFinishedTask}>
         <span>
-          Open up the <code>src/6_UseEffect/</code>folder .
-          The files inside will be the ones you edit to complete the task.
-        </span>
-        <span>
-          Next,{" "}
+          I've reviewed{" "}
           <a href="https://reactjs.org/docs/hooks-effect.html" target="_blank">
-            read the docs for the <code>useEffect</code> hook.
+            the docs for the <code>useEffect</code> hook.
           </a>
         </span>
         <span>
-          Write a functional React component, <code>Timer</code>, that records
-          and displays the seconds since it has been mounted.
+          I've written a functional React component called <code>Timer</code> in{" "}
+          <code>src/6_UseEffect/timer.js</code> that records and displays the
+          seconds since it has been mounted.
         </span>
         <span>
-          The <code>Timer</code> component should be able to receive a{" "}
-          <code>type</code> prop that can switch between{" "}
-          <code>milliseconds</code> and <code>seconds.</code>
+          The <code>Timer</code> component can receive a <code>type</code> prop
+          that switches the display between <code>milliseconds</code> and{" "}
+          <code>seconds.</code>
         </span>
         <span>
-          Make sure you clean up any timers or listeners that you add to the component when
-          the component is unmounted!
+          I've made sure to clean up any timers or listeners when the component
+          is unmounted.
         </span>
       </TaskChecklist>
     </div>
