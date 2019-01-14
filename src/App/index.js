@@ -141,7 +141,7 @@ function App() {
             ))}
           </ul>
           <main>
-            <Route path="/" component={About} />
+            <Route path="/" exact component={About} />
             {routeConfig.map(({ route, component: Component, title }, i) => (
               <Route
                 key={route}
