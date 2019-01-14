@@ -41,8 +41,8 @@ const About = () => {
           editing the files in the relevant folder.
         </li>
         <li>
-          An <code>Expected behavior</code> example of the component in its
-          final, working state
+          An <code>Expected behavior</code> component that shows the component in its
+          final, working state.
         </li>
       </ol>
       <p>
