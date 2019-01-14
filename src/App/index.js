@@ -118,7 +118,7 @@ function App() {
     <Router history={history}>
       <div className="app-container">
         <nav>
-          <Link className="nav-title" to="/about">
+          <Link className="nav-title" to="/">
             React 2019 Interactive Workbook
           </Link>
         </nav>
