@@ -22,7 +22,6 @@ const About = () => {
       </p>
       <p>
         If you'd prefer to do the tasks locally rather than in Code Sandbox,{" "}
-        (this will allow you to save your checklist progress when you reload the page)
         <a href="https://github.com/aholachek/react-2019-interactive-workbook">
           you can clone the repo here.
         </a>
