@@ -9,8 +9,6 @@ const Tasks = ({ children, toggleFinishedTask, localStorageKey }) => {
     []
   )
 
-  console.log(completedTasks)
-
   const listChildren = Children.toArray(children)
   const toggleTaskCompleted = index => {
     if (completedTasks.includes(index)) {
