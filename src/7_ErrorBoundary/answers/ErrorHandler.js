@@ -8,7 +8,7 @@ class ErrorHandler extends Component {
     children: PropTypes.node
   }
 
-  staticDefaultProps = {
+  static defaultProps = {
     logError: () => {}
   }
 
