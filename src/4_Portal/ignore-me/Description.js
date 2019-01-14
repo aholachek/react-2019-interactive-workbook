@@ -27,6 +27,11 @@ const Description = ({ toggleFinishedTask }) => {
           render a portal inside the <code>#modal div</code>.
         </span>
         <span>
+          I've uncommented lines 12-24 in <code>src/4_Portal/index.js</code> in
+          order to apply some helpful styles to the <code>body</code> when the modal is
+          open.{" "}
+        </span>
+        <span>
           I've confirmed that the Modal now covers the entire screen, just like
           in the <code>Expected behavior</code> component.
         </span>

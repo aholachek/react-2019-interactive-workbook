@@ -12,12 +12,12 @@ const Description = ({ toggleFinishedTask }) => {
           </a>
         </span>
         <span>
-          I've edited <code>src/1_Context/ThemeProviderContainer</code> to pass
+          I've edited <code>src/1_Context/ThemeProviderContainer.js</code> to pass
           down a single value&mdash;<code>theme</code>&mdash; anywhere in the
           tree.
         </span>
         <span>
-          I've edited the <code>src/1_Context/ThemedText</code> component to
+          I've edited the <code>src/1_Context/ThemedText.js</code> component to
           ingest the theme context passed down and render the correct text
           style.
         </span>
