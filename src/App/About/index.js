@@ -24,7 +24,10 @@ const About = () => {
         If you'd prefer to do the tasks locally rather than in Code Sandbox,{" "}
         <a href="https://github.com/aholachek/react-2019-interactive-workbook">
           you can clone the repo here.
-        </a>
+        </a>{" "}
+        (Doing the project locally instead of in CodeSandbox will make certain
+        tasks, such as the <code>lazy</code> and <code>ErrorBoundary</code>{" "}
+        tasks, have more realistic browser behavior.)
       </p>
       <p>
         To get started,{" "}
@@ -47,8 +50,7 @@ const About = () => {
       </ol>
       <p>
         If you get confused, search for the <code>TODO</code> comments in the
-        code, or take a peek at the <code>answers</code> folder in
-        each task.
+        code, or take a peek at the <code>answers</code> folder in each task.
       </p>
     </div>
   )
