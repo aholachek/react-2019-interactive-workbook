@@ -22,12 +22,13 @@ const About = () => {
       </p>
       <p>
         If you'd prefer to do the tasks locally rather than in Code Sandbox,{" "}
+        (this will allow you to save your checklist progress when you reload the page)
         <a href="https://github.com/aholachek/react-2019-interactive-workbook">
           you can clone the repo here.
         </a>
       </p>
       <p>
-        To get started,{' '}
+        To get started,{" "}
         <Link to="/context">just click on a task in the menu</Link> and follow
         the instructions! Each task should take between 5 and 25 minutes to
         complete. For most tasks, you'll see three cards:
@@ -41,8 +42,8 @@ const About = () => {
           editing the files in the relevant folder.
         </li>
         <li>
-          An <code>Expected behavior</code> component that shows the component in its
-          final, working state.
+          An <code>Expected behavior</code> component that shows the component
+          in its final, working state.
         </li>
       </ol>
       <p>

@@ -4,7 +4,7 @@ import GridSquare from "./GridSquare"
 
 const range = (end, start = 0) => [...new Array(end).keys()].slice(start)
 
-const gridCellCount = 100
+const gridCellCount = 50
 
 const Grid = () => {
   const [highlightedIndex, setHighlightedIndex] = useState(0)
