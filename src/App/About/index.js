@@ -22,7 +22,7 @@ const About = () => {
       </p>
       <p>
         If you'd prefer to do the tasks locally rather than in Code Sandbox,{" "}
-        <a href="https://github.com/aholachek/react-2019-interactive-workbook">
+        <a href="https://github.com/aholachek/react-2019-interactive-workbook" target="_blank" rel="noopener noreferrer">
           you can clone the repo here.
         </a>{" "}
         (Doing the project locally instead of in CodeSandbox will make certain
