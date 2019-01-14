@@ -27,7 +27,7 @@ const About = () => {
         </a>
       </p>
       <p>
-        To get started, fork this Code Sandbox, then{" "}
+        To get started,{' '}
         <Link to="/context">just click on a task in the menu</Link> and follow
         the instructions! Each task should take between 5 and 25 minutes to
         complete. For most tasks, you'll see three cards:
