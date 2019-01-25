@@ -1,7 +1,6 @@
 import React, { Children } from "react"
 import useLocalStorageState from "../useLocalStorageState"
 import styles from "./index.module.scss"
-import check from "../SidebarTaskIndicator/checkmark.svg"
 
 const Tasks = ({ children, toggleFinishedTask, localStorageKey }) => {
   const [completedTasks, setCompleted] = useLocalStorageState(
@@ -29,11 +28,7 @@ const Tasks = ({ children, toggleFinishedTask, localStorageKey }) => {
               className="is-sr-only"
               checked={completedTasks.includes(i)}
             />
-            <span title="complete task">
-              {completedTasks.includes(i) && (
-                <img src={check} className={styles.checkmark} alt="finished" />
-              )}
-            </span>
+            <span title="complete task" />
           </label>
           {task}
         </li>

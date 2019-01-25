@@ -10,16 +10,16 @@
   width: 1.3rem;
   height: 1.3rem;
   border-radius: 100px;
-  border: 1px solid fade-out($blue, .6);
-  margin-right: .5rem;
+  border: 1px solid fade-out($blue, 0.6);
+  margin-right: 0.5rem;
   &.checked {
     background-color: $blue;
+    &::after {
+      color: white;
+      position: absolute;
+      content: "✓";
+      left: 4px;
+      top: 0px;
+    }
   }
-}
-
-.checkmark {
-  position: absolute;
-  width:.95rem;
-  left: 3px;
-  top: 5px;
 }

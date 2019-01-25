@@ -24,6 +24,15 @@
   }
   input:checked + span {
     background-color: $blue;
+    &::after {
+      color: white;
+      position: absolute;
+      font-size: 1.2rem;
+      font-weight: bold;
+      content: "✓";
+      left: 4px;
+      top: -2px;
+    }
   }
 }
 
