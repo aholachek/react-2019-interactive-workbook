@@ -29,7 +29,7 @@ const About = () => {
         </a>{" "}
       </p>
       <p>
-        <b>Note:</b>
+        <b>Note:</b>{' '}
         Doing the project locally instead of in CodeSandbox will result in a
         better experience, since tasks like the <code>lazy</code> and{" "}
         <code>ErrorBoundary</code> tasks, will exhibit more realistic browser

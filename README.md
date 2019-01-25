@@ -13,6 +13,7 @@ The workbook consists of a series of tasks that will get you quickly up to speed
 Either [fork on CodeSandbox](https://codesandbox.io/s/github/aholachek/react-2019-interactive-workbook?module=/src/1_Context/ThemeProviderContainer.js) or fork this repo and run `yarn` and `yarn start`.
 
 <b>Note:</b>
+
 Doing the project locally instead of in CodeSandbox will result in a
 better experience, since tasks like the <code>lazy</code> and{" "}
 <code>ErrorBoundary</code> tasks, will exhibit more realistic browser
