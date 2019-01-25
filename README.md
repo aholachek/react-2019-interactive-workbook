@@ -6,7 +6,18 @@ Who has time to learn about all this new stuff?
 
 <img src="src/App/About/oldman.jpg" alt="old man yells at cloud" width="300px">
 
-The workbook consists of a series of tasks that will get you quickly up to speed on the basics of some new(ish) React patterns.
+This workbook consists of a series of tasks that will get you quickly up to speed on the basics of the following new(ish) React patterns:
+
+- Context
+- Memo
+- Lazy
+- Portals
+- Hooks
+- Error Boundaries
+
+Here's what it looks like:
+
+![Example screen from the workbook](./screenshot.png)
 
 ## How to get started
 
