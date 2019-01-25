@@ -9,7 +9,7 @@ const Description = ({ toggleFinishedTask }) => {
         localStorageKey="error-boundary"
       >
         <span>
-          I've reviewed{" "}
+          Review{" "}
           <a
             href="https://reactjs.org/docs/error-boundaries.html"
             target="_blank"
@@ -19,14 +19,14 @@ const Description = ({ toggleFinishedTask }) => {
           </a>
         </span>
         <span>
-          I recognize that the <code>Task</code> component, when the button is
+          Recognize that the <code>Task</code> component, when the button is
           clicked, will render <code>DangerousComponent</code>, which will throw
-          an uncaught error and crash the page. (I'll have to reload the page)
+          an uncaught error and crash the page. (You'll have to reload the page)
         </span>
         <span>
           <p>
-            I've clicked the button for the <code>Expected behavior</code>{" "}
-            component and recognize how the error no longer crashes the page.
+            Click the button for the <code>Expected behavior</code> component
+            and recognize how the error no longer crashes the page.
           </p>
           <p>
             <b>Note:</b> Even when the <code>ErrorBoundary</code> is successfuly
@@ -37,7 +37,7 @@ const Description = ({ toggleFinishedTask }) => {
           </p>
         </span>
         <span>
-          I've implemented an error boundary in{" "}
+          Implement an error boundary in{" "}
           <code>src/7_ErrorBoundary/ErrorHandler.js</code> to prevent{" "}
           <code>src/7_ErrorBoundary/DangerousComponent.js</code> from crashing
           the page. Instead, when <code>ErrorHandler</code> catches an error, it
@@ -45,8 +45,9 @@ const Description = ({ toggleFinishedTask }) => {
           <code>message</code> prop.
         </span>
         <span>
-          My implementation of the <code>ErrorHandler</code> calls the function
-          passed in to the <code>logError</code> prop when there is an error.
+          Verify that your implementation of the <code>ErrorHandler</code> calls
+          the function passed in to the <code>logError</code> prop when there is
+          an error.
         </span>
       </TaskChecklist>
     </div>

@@ -10,7 +10,7 @@ const Description = ({ toggleFinishedTask }) => {
         localStorageKey="lazy"
       >
         <span>
-          I've reviewed{" "}
+          Review{" "}
           <a
             href="https://reactjs.org/docs/code-splitting.html#reactlazy"
             target="_blank"
@@ -20,15 +20,15 @@ const Description = ({ toggleFinishedTask }) => {
           </a>
         </span>
         <span>
-          I've updated <code>src/3_Lazy/index.js</code> to lazily load the
-          component from
+          Update <code>src/3_Lazy/index.js</code> to lazily load the component
+          from
           <code>src/3_Lazy/LazilyLoaded.js</code>.
         </span>
         <span>
           The fallback text while the element is loading says "Loading..."
         </span>
         <span>
-          When I check for the new bundle in the network dev tools, the
+          Check for the new bundle in the network dev tools and confirm that the
           lazily-loaded bundle is named <code>LazilyLoaded.chunk.js</code> and
           looks like this:
           <img src={example} alt="named, lazy-loaded bundle" />
