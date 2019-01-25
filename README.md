@@ -21,14 +21,15 @@ Here's what it looks like:
 
 ## How to get started
 
-Either [fork on CodeSandbox](https://codesandbox.io/s/github/aholachek/react-2019-interactive-workbook?module=/src/1_Context/ThemeProviderContainer.js) or fork this repo and run `yarn` and `yarn start`.
+1. Either [fork on CodeSandbox](https://codesandbox.io/s/github/aholachek/react-2019-interactive-workbook?module=/src/1_Context/ThemeProviderContainer.js) or fork this repo
+2. Run `yarn` and `yarn start`.
 
 **Note:** Doing the project locally instead of in CodeSandbox will result in a
 better experience, since the <code>React.lazy</code> and
 <code>ErrorBoundary</code> tasks will exhibit more realistic browser
 behavior.
 
-Next, click on a task in the menu and follow the instructions! Each task should take between 5 and 30 minutes to complete. For most tasks, you'll see three cards:
+Next, click on a task in the menu and follow the instructions. Each task should take between 5 and 30 minutes to complete. For most tasks, you'll see three cards:
 
 1. A set of instructions that you can complete by checking them off.
 2. A non-working component that you must fix by editing the files in the relevant folder.
