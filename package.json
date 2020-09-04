@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bulma": "^0.7.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "react": "16.7.0-alpha.2",
     "react-dom": "16.7.0-alpha.2",
     "react-markdown": "^4.0.6",
